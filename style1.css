@@ -1,0 +1,304 @@
+/*CHAUGULE POOJA
+    TASK 1- OASIS INFOBYTE 
+    STARBUCKS LANDING PAGE
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height :100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #90ee90;
+
+}
+header
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(15 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+
+}
+header .logo
+{
+    position: relative;
+    max-width: 200px;
+}
+header ul
+{
+    position:relative;
+    display :flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #746756;
+    color: #234452;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+header ul li a:last-child
+{
+    background: #856485;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2
+{
+    color: #856485;
+    
+    font-size:4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span
+{
+    color: #CC0033;
+    font-size:1.2em;
+    font-weight: 900;
+}
+.content .textBox p
+{
+    color: #660099;
+}
+.button
+{
+    padding: 20px 35px;
+    border: 5px solid var(--second-color);
+    border-radius: 60px;
+    color:var(--second-color);
+    font-weight: 1000;
+}
+.button:hover
+{
+    color:#fff;
+    background: var(--second-color);
+}
+.content .textBox p2
+{
+    color: #CC0033;
+}
+.content .imgBox
+{
+    width: 800px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    margin-top: 70px;
+}
+.content .imgBox img
+{
+    max-width: 350px;
+}
+.thumb
+{
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    transform: translateX(-40%);
+    display: flex;
+}
+.thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20 px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translateY(-20px);
+}
+.thumb li img
+{
+    max-width: 200px;
+}
+.sci
+{
+    position: absolute;
+    bottom: 50%;
+    right:30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: inline-block;
+    
+    margin: 5px 0;
+    transform: scale(0.6);
+    
+}
+
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: #017143;
+    clip-path: circle(800px at right 1000px );
+
+}
+.heading
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span
+{
+    font-size:1rem;
+    font-weight:600;
+    color:var(--second-color);
+}
+.headingh1
+{
+    font-size:2rem;
+    color:#856485;
+
+}
+.shop-container
+{
+    display: flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin-top:5rem;
+}
+.shop-container .box
+{
+    flex: 1 1 10rem;
+    background-color:antiquewhite;
+    padding: 20px;
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.shop-container .box .box-img
+{
+    width: 150px;
+    margin-top: -100px;
+}
+.shop-container .box .box-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+}
+.stars
+{
+    margin:1 rem 0 0.1rem;
+}
+.shop-container .box .stars .bx
+{
+    color:#746756;
+}
+.shop-container .box h2
+{
+    color:#746756;
+    font-size:1.2rem;
+}
+.shop-container .box span
+{
+    color:#856485;
+    font-size:1.4rem;
+    font-weight:500;
+    margin:0.2rem 0.5rem;
+}
+.box .button
+{
+    border: 5px solid #234452;
+    color:#746756;
+}
+.box .button:hover
+{
+    background: #856485;
+    color: aqua;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.delivery-img
+{
+   
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+}
+  
+
+.delivery-text, .app-text
+{
+    position: absolute;
+    left: 40%;
+    top: 30px;
+    transform: translateX(-40%);
+    display: flex;
+}
+.delivery-text h2, .app-text h2
+{
+    color: #856485;
+    
+    font-size:4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}

@@ -1,0 +1,149 @@
+<!--CHAUGULE POOJA
+    TASK 1- OASIS INFOBYTE 
+    STARBUCKS LANDING PAGE
+-->
+
+<!DOCKTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title>Starbucks landing page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="C:\Users\bapuc\Downloads\logo.png"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul>
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#shop"><b>Shop</b></a></li>
+                <li><a href="#delivery"><b>Delivery</b></a></li>
+                <li><a href="#app"><b>App</b></a></li>
+                
+                
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>it is not just coffee<br>it's<span>Starbucks</span></h2>
+                <p>Starbucks is always managing the tension between opposite. on the one hand I'd say we are 
+                    comforting and predictable.Yet on the other hand, we're constantly delighting and surprisingly
+                </p>
+                <p2><b>“It’s a brew-tiful day to have a Starbucks drink.”<br>
+                    “Everything I brew, I brew it for you.”</b></p2>
+                <a href="#" class="button"><b>Learn More</b></a>
+            </div>
+            <div class="imgBox">
+                <img src="C:\Users\bapuc\Downloads\img2.png" class="starbucks">
+              
+                
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="C:\Users\bapuc\Downloads\thumb1.png" onclick="changeCircleColor('#017143')"></li>
+            <li><img src="C:\Users\bapuc\Downloads\thumb2.png" onclick="changeCircleColor('#eb7495')"></li>
+            <li><img src="C:\Users\bapuc\Downloads\thumb3.png" onClick="changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="C:\Users\bapuc\Downloads\facebook.png"></a></li>
+            <li><a href="#"><img src="C:\Users\bapuc\Downloads\twitter.png"></a></li>
+            
+        </ul>
+    </section>
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span> Shop Now</span>
+            <h1>shop coffee</h1>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\bapuc\Downloads\img1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="button">order now </a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\bapuc\Downloads\img2.png"alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="button">order now </a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="C:\Users\bapuc\Downloads\img3.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>$ 12.4</span>
+                <a href="#" class="button">order now </a>
+            </div>
+        </div>
+
+    </section>
+    <section class="delivery" id="delivery">
+        <div class="heading">
+            
+        </div>
+        <div class ="container">
+            <div class="delivery-img">
+                <img src="C:\Users\bapuc\Downloads\delivery.png">
+            </div>
+            <div class="delivery-text">
+                <h2>Today deserve delivery</h2>
+                <a href="#" class="button">Order Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="app" id="app">
+        <div class="heading">
+          
+        </div>
+        <div class="container">
+            <div class="app-text">
+                <div class="delivery text"></div>
+                <h2>Today deserve delivery</h2>
+                <a href="#" class="button">Get App</a>
+            </div>
+            <div class="app-img">
+                <img src="C:\Users\bapuc\Downloads\app2.png" alt="">
+            </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
